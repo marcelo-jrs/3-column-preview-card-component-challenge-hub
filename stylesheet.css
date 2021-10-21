@@ -1,10 +1,21 @@
-body{
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+
+main{
     color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
     margin: 0;
     display: flex;
-    width: 1440px;
-    height: 1080px;
+    max-width: 1440px;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -16,42 +27,45 @@ p{
     font-size: 15px;
 }
 
-h1{
+span{
+    margin: 0;
+    font-size: 40px;
     color:  hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
-    padding-left: 45px;
+    padding-left: 12%;
     margin: 0;
 }
 
 img {
+    box-sizing: content-box;
     padding-bottom: 3em;
     padding-left: 3em;
     padding-top: 3em;
-    width: 63.92px;
-    height: 40px;
+    height: 56px;
+    width: 80px; 
 }
 
 .block1{
+    min-height: 500px;
+    max-width: 300px;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
-    width: 20%;
-    height: 45%;
     display: flex;
     flex-direction: column;
     background-color:hsl(31, 77%, 52%);
 }
 
 .block2{
-    width: 20%;
-    height: 45%;
+    min-height: 500px;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     background-color:hsl(184, 100%, 22%);
 }
 
 .block3{
-    width: 20%;
-    height: 45%;
+    min-height: 500px;
+    max-width: 300px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
     display: flex;
@@ -97,7 +111,7 @@ img {
 }
 
 .dark{
-    border: 0;
+    border: 0; 
     margin-left: 2em;
     margin-top: 5em;
     background-color: hsl(0, 0%, 95%);
@@ -112,4 +126,32 @@ img {
     background-color: hsl(179, 100%, 13%);
     color: hsl(0, 0%, 95%);
     border:hsl(0, 0%, 95%) 2px solid;
+}
+
+@media (max-width: 897px){
+    p{
+        font-size: 13px;
+    }
+    span{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 785px){
+    p{
+        font-size: 12px;
+    }
+    span{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 520px){
+    p{
+        font-size: 10px;
+    }
+    span{
+        font-size: 20px;
+    }  
 }
