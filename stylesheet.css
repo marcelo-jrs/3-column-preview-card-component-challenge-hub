@@ -128,30 +128,19 @@ img {
     border:hsl(0, 0%, 95%) 2px solid;
 }
 
-@media (max-width: 897px){
-    p{
-        font-size: 13px;
+@media (max-width: 900px){
+    main{
+        flex-direction: column;
     }
-    span{
-        font-size: 30px;
-    }
-}
 
+    .block1{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
 
-@media (max-width: 785px){
-    p{
-        font-size: 12px;
+    .block3{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
     }
-    span{
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 520px){
-    p{
-        font-size: 10px;
-    }
-    span{
-        font-size: 20px;
-    }  
 }
